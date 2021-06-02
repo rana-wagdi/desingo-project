@@ -1,3 +1,22 @@
+ 
+ 
  .header{
-    background-color: $maunColor;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
 }
+.logo{
+    margin: 0 25px;
+}
+.navbar{
+    display:flex;
+    text-align:center;
+
+li{
+    margin: 0 1rem;
+    text-align:center;
+    list-style: none;
+}
+
+}
+ 

@@ -6,9 +6,9 @@
     margin: 30px;
 }
 .logo{
-    margin: 0 25px;
+    margin: 15px;
 }
-.navbar{
+.header-links{
     display:flex;
     text-align:center;
 
@@ -16,6 +16,12 @@ li{
     margin: 0 1rem;
     text-align:center;
     list-style: none;
+    font-weight: 400;
+    font-size: 1.1rem;
+    &:hover{
+        border-bottom: 1px solid transparent;
+        transition-duration: 1s;
+    }
 }
 
 }

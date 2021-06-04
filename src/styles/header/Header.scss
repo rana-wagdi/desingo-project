@@ -6,14 +6,20 @@
     margin: 30px;
 }
 .logo{
-    margin: 15px;
+    margin: 15px 0;
 }
+
+
 .header-links{
     display:flex;
     text-align:center;
+    overflow: hidden;
+    @media (max-width: 600px) {
+        display: none;
+    }
 
 li{
-    margin: 0 1rem;
+    margin: 0 1rem ;
     text-align:center;
     list-style: none;
     font-weight: 400;
@@ -24,5 +30,11 @@ li{
     }
 }
 
+}
+
+.header-burger {
+    @media (min-width: 600px) {
+        display: none;
+    }
 }
  

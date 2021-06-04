@@ -10,21 +10,21 @@ const Header = () => {
     return (
       <header className="header">
         <div className="logo">
-         
-            <img src={logo} alt="logo" height="30px" />
-          
+          <img src={logo} alt="logo" height="30px" />
         </div>
         <ul className="header-links">
-          <li>
-           OUR COMPANY
-          </li>
-          <li>
-           LOCATION
-          </li>
-          <li>
-            CONTACT
-          </li>
+          <li>OUR COMPANY</li>
+          <li>LOCATION</li>
+          <li>CONTACT</li>
         </ul>
+
+        <div className="header-burger">
+          <ul className="">
+            <li>OUR COMPANY</li>
+            <li>LOCATION</li>
+            <li>CONTACT</li>
+          </ul>
+        </div>
       </header>
     );
 }

@@ -1,12 +1,29 @@
-import React from 'react';
-import { Link } from "react-router-dom"
+import React, {useState} from 'react';
+// import { Link } from "react-router-dom"
 
 import logo from '../../assets/Header/logo-dark.png';
-
+import {AiOutlineMenu} from 'react-icons/ai';
+import {AiOutlineCloseCircle} from 'react-icons/ai'
 
 
 
 const Header = () => {
+
+  const [open, setOpen] = useState(false);
+  const humburerIcon = 
+    <AiOutlineMenu
+      className="humburger"
+      size="40px"
+      onClick={() => setOpen(!open)}
+    />
+    const closeIcon = 
+      <AiOutlineCloseCircle
+        className="humburger"
+        size="40px"
+        onClick={() => setOpen(!open)}
+      />
+    
+  
     return (
       <header className="header">
         <div className="logo">
@@ -19,11 +36,14 @@ const Header = () => {
         </ul>
 
         <div className="header-burger">
-          <ul className="">
-            <li>OUR COMPANY</li>
-            <li>LOCATION</li>
-            <li>CONTACT</li>
-          </ul>
+          {open ? closeIcon : humburerIcon}
+          {open && 
+            <ul className="">
+              <li>OUR COMPANY</li>
+              <li>LOCATION</li>
+              <li>CONTACT</li>
+            </ul>
+          }
         </div>
       </header>
     );

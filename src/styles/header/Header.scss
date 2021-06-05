@@ -18,16 +18,16 @@
         display: none;
     }
 
-li{
-    margin: 0 1rem ;
-    text-align:center;
-    list-style: none;
-    font-weight: 400;
-    font-size: 1.1rem;
-    &:hover{
-        border-bottom: 1px solid transparent;
-        transition-duration: 1s;
-    }
+    li{
+        margin: 0 1rem ;
+        text-align:center;
+        list-style: none;
+        font-weight: 400;
+        font-size: 1.1rem;
+        &:hover{
+            border-bottom: 1px solid transparent;
+            transition-duration: 1s;
+        }
 }
 
 }

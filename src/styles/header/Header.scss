@@ -1,5 +1,4 @@
  
- 
  .header{
     display: flex;
     justify-content: space-between;
@@ -86,12 +85,12 @@
 .humburger{
     position: fixed;
     padding: 0 .5rem;
-    top:4%;
+    top:5%;
     right: 8%;
     margin: 0 .5rem ;
     cursor: pointer;
      @media (max-width: 600px) {
-        top:2.2%;
+        top:3%;
         right: 0%;
         
     }

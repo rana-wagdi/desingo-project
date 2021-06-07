@@ -1,0 +1,22 @@
+.home{
+    background-color: $peach;
+    height: auto;
+    display: grid;
+    grid-template-columns: 600px 300px;
+    border-radius: .8rem;
+    margin: 3rem 1.5rem;
+    overflow: hidden;
+    background-image: url('../../assets/Home/bg-pattern-hero-home.svg');
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+.home-title{
+    margin: 9rem 0 auto 2rem;
+    h1{
+        font-size: 2.8rem;
+        color: $peach-bg;
+    }
+}
+// .img-mobile{
+//     background-image: 
+// }

@@ -38,7 +38,7 @@ const Header = () => {
         <div className="header-burger">
           {open ? closeIcon : humburerIcon}
           {open && 
-            <ul className="">
+            <ul className="header-links-burger">
               <li>OUR COMPANY</li>
               <li>LOCATION</li>
               <li>CONTACT</li>

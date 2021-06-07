@@ -7,6 +7,10 @@
 }
 .logo{
     margin: 15px 0;
+     @media (max-width: 600px) {
+        margin-top: 0;
+    }
+
 }
 
 
@@ -35,6 +39,23 @@
 .header-burger {
     @media (min-width: 600px) {
         display: none;
+    }
+     @media (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .header-links-burger{
+        text-decoration: none;
+        list-style: none;
+        text-align: center;
+        background-color: gray;
+        // padding: 3rem;
+        width: 100%;
+        height: 10rem;
+    }
+    li{
+         text-decoration: none;
     }
 }
 .humburger{

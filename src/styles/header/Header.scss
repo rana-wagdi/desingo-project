@@ -8,7 +8,7 @@
 .logo{
     margin: 15px 0;
      @media (max-width: 600px) {
-        margin-top: 0;
+        margin-top: 5px 0;
     }
 
 }
@@ -41,25 +41,30 @@
         display: none;
     }
      @media (max-width: 600px) {
+        position: fixed;
         display: flex;
         flex-direction: column;
-        
+        width: 100%;
+        left: 0;
     }
     .header-links-burger{
         text-decoration: none;
         list-style: none;
-        text-align: center;
+        text-align:left;
         background-color: gray;
-        // padding: 3rem;
-        width: 100%;
-        height: 10rem;
+        margin: 5rem 0;
+        width: 100% ;
+        overflow: hidden;
+        left: 0;
     }
     li{
          text-decoration: none;
+         width: 100% !important;
+         padding: 1rem;
     }
 }
 .humburger{
     position: absolute;
-    right: 5%;
+    right: 10%;
     cursor: pointer;
 }

@@ -13,4 +13,8 @@ body {
     @media (max-width: 890px) {
         padding: .5% 0% 2% 0%;
     }
+    @media (max-width: 600px) {
+        padding: 0% !important;
+    }
+    
 }

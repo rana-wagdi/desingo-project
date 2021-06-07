@@ -7,8 +7,21 @@
 }
 .logo{
     margin: 15px 0;
-     @media (max-width: 600px) {
-        margin-top: 5px 0;
+    left: 0%;
+     @media (max-width: 700px) {
+        margin: 0 15px 0 0 ;
+    }
+    img{
+        height: 30px;
+        left: 0%;
+        @media (max-width: 600px) {
+        
+        height: 25px;
+    }
+    @media (max-width: 300px) {
+        
+        height: 20px;
+    }
     }
 
 }
@@ -18,7 +31,7 @@
     display:flex;
     text-align:center;
     overflow: hidden;
-    @media (max-width: 600px) {
+    @media (max-width: 700px) {
         display: none;
     }
 
@@ -37,25 +50,28 @@
 }
 
 .header-burger {
-    @media (min-width: 600px) {
+    @media (min-width: 700px) {
         display: none;
+        
     }
-     @media (max-width: 600px) {
+     @media (max-width: 700px) {
         position: fixed;
         display: flex;
         flex-direction: column;
         width: 100%;
         left: 0;
+        
     }
     .header-links-burger{
         text-decoration: none;
         list-style: none;
         text-align:left;
-        background-color: gray;
+        background-color: $black;
         margin: 5rem 0;
         width: 100% ;
         overflow: hidden;
         left: 0;
+        color: $white;
     }
     li{
          text-decoration: none;
@@ -64,7 +80,9 @@
     }
 }
 .humburger{
-    position: absolute;
-    right: 10%;
+    position: fixed;
+    padding: 0 .5rem;
+    right: 8%;
+    margin: 0 .5rem ;
     cursor: pointer;
 }

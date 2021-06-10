@@ -11,6 +11,9 @@
     background-image: url('../../assets/Home/bg-pattern-hero-home.svg');
     background-repeat: no-repeat;
     background-position-x: right;
+     @media (max-width: 800px) {
+        grid-template-columns: auto;
+    }
 }
 .home-title{
     
@@ -20,9 +23,17 @@
     // flex-direction: column;
     // justify-content: center;
     width: 100%;
+     @media (max-width: 800px) {
+        text-align: center;
+        margin: auto;
+        width: 70%;
+    }
     h1{
         font-size: 2.8rem;
         margin-bottom: 3rem;
+        @media (max-width: 800px) {
+        
+    }
     }
     p{
         line-height: 1.5rem;

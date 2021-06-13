@@ -58,20 +58,10 @@
         display: none;
         
     }
-     @media (max-width: 700px) {
-        
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        width: 100%;
-        left: 0;
-        
-    }
     .header-links-burger{
         position: fixed;
         text-decoration: none;
         list-style: none;
-        text-align:left;
         background-color: $black;
         margin: 5rem 0;
         width: 100% ;
@@ -85,17 +75,15 @@
          padding: 1rem;
     }
 }
+
 .humburger{
-    position: unset;
-    display: flex;
-    padding: 0 .5rem;
-    // top:5%;
-    // right: 8%;
-    margin: 0 .5rem ;
+    // padding: 0 .5rem;
+    // right: 0% !important;
+    // margin: 0 .5rem ;
     cursor: pointer;
-     @media (max-width: 600px) {
+    // float: right !important;
+    @media (max-width: 600px) {
         top:3%;
         right: 0%;
-        
     }
 }

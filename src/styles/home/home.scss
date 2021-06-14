@@ -12,15 +12,17 @@
     background-position-x: right;
      @media (max-width: 800px) {
         grid-template-columns: auto;
+        grid-template-rows: 34rem;
+        background-size: 100%;
+        background-position-x: 10rem;
+        background-position-y: center;
+        height: 60rem;
     }
      @media (max-width: 600px) {
         margin: 3rem 0;
         border-radius: 0;
-        background-size: 100%;
-        background-position-x: 3rem;
-        background-position-y: center;
-        grid-template-rows: 30rem;
-        height: 60rem;
+        background-size: 200%;
+        background-position-x: 6rem;
     }
 }
 .home-title{
@@ -74,22 +76,27 @@
     overflow: hidden;
     margin: -3rem;
     width:auto;
-     @media (max-width: 600px) {
-           margin: auto;
+     @media (max-width: 800px) {
+       margin: auto;
+       top:0%;
     }
     img{
         width: auto;
+        @media (max-width: 800px) {
+            margin:-10rem auto;
+            top:0%;
+    }
         @media (max-width: 600px) {
            margin:-10rem -5rem;
-           top:0%;
+
     }
     @media (max-width: 430px) {
            margin:-10rem -7.3rem;
-           top:0%;
+
     }
      @media (max-width: 380px) {
-           margin:-10rem -8rem;
-           top:0%;
+           margin:-10rem -9rem;
+
     }
         
     }

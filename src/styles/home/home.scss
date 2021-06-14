@@ -19,7 +19,8 @@
         background-size: 100%;
         background-position-x: 3rem;
         background-position-y: center;
-        grid-template-rows: 40rem;
+        grid-template-rows: 30rem;
+        height: 60rem;
     }
 }
 .home-title{
@@ -62,7 +63,7 @@
         border-radius: .9rem;
         color: $dark-grey;
         padding: 1rem 1.5rem;
-        margin: 2rem;
+        margin: 1rem;
         border: none;
         &:hover{
             background-color: $light-peach;
@@ -73,10 +74,18 @@
     overflow: hidden;
     margin: -3rem;
     width:auto;
+     @media (max-width: 600px) {
+           margin: auto;
+    }
     img{
         width: auto;
         @media (max-width: 600px) {
-           
+           margin:-10rem -5rem;
+           top:0%;
+    }
+    @media (max-width: 430px) {
+           margin:-10rem -7.3rem;
+           top:0%;
     }
         
     }

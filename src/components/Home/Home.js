@@ -1,7 +1,7 @@
 import React from 'react';
 
 import mobile from '../../assets/Home/image-hero-phone.png';
-import hero from '../../assets/Home/bg-pattern-hero-home.svg'
+
 
 const Home = () => {
     return (

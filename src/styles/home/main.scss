@@ -7,6 +7,11 @@
     grid-template-rows: repeat(2, 50%);
     grid-column-gap: 1.5rem;
     grid-row-gap: 1.25rem;
+    overflow: hidden;
+    @media (max-width: 900px) {
+        grid-template-columns: 500px;
+        grid-template-rows: repeat(3, 1fr);
+    }
 }
 .web{
     background-repeat: no-repeat;
@@ -47,6 +52,17 @@
         margin-top:13rem;
         margin-bottom: 1.5rem;
     }
+     @media (max-width: 900px) {
+        grid-row: 1;
+        grid-row-start: span 1;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        h1{
+        margin-top:1rem;
+        margin-bottom: 1rem;
+    }
+      }
 
 }
 
@@ -56,6 +72,11 @@
     background-image: url(../../assets/Home/image-app-design.jpg);
     grid-row: 1;
     grid-column: 2;
+      @media (max-width: 900px) {
+        grid-row: 2;
+        grid-column: 1;
+        background-size: 100% auto;
+      }
 }
 .app-design{
         @extend .web-design;
@@ -66,6 +87,7 @@
          p{
         letter-spacing: .2rem;
     }
+ 
  }
 
 
@@ -78,6 +100,11 @@
         @extend .app-design;
         
     }
+     @media (max-width: 900px) {
+        grid-row: 3;
+        grid-column: 1;
+        background-size: 100% auto;
+      }
 }
 .arrow-icon{
     color: $peach;

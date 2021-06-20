@@ -8,7 +8,7 @@ const PeopleContact = () => {
       <section className="peopleContact">
         <div className="passionate">
           <img src={passionate} alt="passionate" />
-          <h2>PASSIONATE</h2>
+          <h3>PASSIONATE</h3>
           <p>
             Each project starts with an in-depth brand research to ensure we
             only create products that serve a purpose. We merge art, design, and
@@ -17,7 +17,7 @@ const PeopleContact = () => {
         </div>
         <div className="resourceful">
           <img src={resourceful} alt="resourceful" />
-          <h2>RESOURCEFUL</h2>
+          <h3>RESOURCEFUL</h3>
           <p>
             Everything that we do has a strategic purpose. We use an agile
             approach in all of our projects and value customer collaboration. It
@@ -26,7 +26,7 @@ const PeopleContact = () => {
         </div>
         <div className="friendly">
           <img src={friendly} alt="friendly" />
-          <h2>FRIENDLY</h2>
+          <h3>FRIENDLY</h3>
           <p>
             We are a group of enthusiastic folks who know how to put people
             first. Our success depends on our customers, and we strive to give

@@ -1,5 +1,4 @@
 import React from 'react';
-import web from "../../assets/Home/image-web-design-large.jpg";
 import { IoIosArrowForward } from "react-icons/io";
 
 const Main = () => {

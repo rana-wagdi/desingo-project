@@ -1,0 +1,19 @@
+.peopleContact{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1;
+    grid-column-gap: 1.5rem;
+    justify-content: center;
+}
+
+.passionate{
+    text-align: center;
+}
+
+.resourceful{
+    @extend .passionate;
+}
+
+.friendly{
+    @extend .passionate;
+}

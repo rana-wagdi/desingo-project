@@ -1,7 +1,8 @@
 import React from 'react';
 import Header from './components/Header/Header';
-import Home from './components/Home/Home'
-import Main from './components/Home/Main'
+import Home from './components/Home/Home';
+import Main from './components/Home/Main';
+import PeopleContact from './components/Home/PeopleContact';
 
 
 import './App.scss'
@@ -11,6 +12,7 @@ function App() {
     <Header />
     <Home />
     <Main />
+    <PeopleContact />
     </div>
   );
 }

@@ -32,6 +32,10 @@
     h1{
         letter-spacing: .2rem;
         font-size: 2.5rem;
+         @media (max-width: 900px) {
+            margin-top:2rem;
+            margin-bottom: 1rem;
+        }
     }
     p{
         letter-spacing: .3rem;
@@ -62,10 +66,6 @@
      @media (max-width: 900px) {
         grid-row: 1;
         grid-row-start: span 1;
-        background-size: 100% auto;
-        background-repeat: no-repeat;
-        background-position: center;
-        background:  url(../../assets/Home/image-web-design-small.jpg);
       }
     h1{
         margin-top:14rem;
@@ -92,13 +92,16 @@
       @media (max-width: 900px) {
         grid-row: 2;
         grid-column: 1;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
       }
 }
 .app-design{
         @extend .web-design;
+        @media (max-width: 900px) {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            grid-column: 1;
+        }
         h1{
             margin-top: 6rem;
             margin-bottom: 1rem;
@@ -131,9 +134,6 @@
      @media (max-width: 900px) {
         grid-row: 3;
         grid-column: 1;
-        background-size: 100% auto;
-        background-repeat: no-repeat;
-        background-position: center;
       }
 }
 .arrow-icon{

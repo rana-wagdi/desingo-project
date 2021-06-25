@@ -20,11 +20,18 @@
     @media (max-width:1200px){
         text-align:left;
     }
+    @media (max-width:650px){
+        text-align:center;
+    }
     img{
         @media (max-width:1200px){
-        display: inline-block;
+        // display: inline-block;
         float: left;
         margin:1rem 2rem;
+        @media (max-width:650px){
+        float: none;
+        margin: auto;
+    }
     }
     }
     h3{

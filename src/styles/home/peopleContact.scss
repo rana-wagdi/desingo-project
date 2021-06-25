@@ -1,7 +1,6 @@
 .peopleContact{
     display: grid;
     padding: 0 4rem;
-    // height: 50rem;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1;
     grid-column-gap: 5rem;
@@ -20,6 +19,7 @@
 .passionate{
     text-align: center;
     overflow: hidden;
+    margin-bottom:3rem;
     @media (max-width:1200px){
         text-align:left;
     }

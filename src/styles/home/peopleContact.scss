@@ -6,13 +6,31 @@
     grid-template-rows: 1;
     grid-column-gap: 5rem;
     justify-content: center;
+     @media (max-width:1200px){
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3, 1fr);
+    }
     // background-image: url(../../assets/Home/bg-pattern-leaf.svg);
     
 }
 
 .passionate{
     text-align: center;
+    overflow: hidden;
+    @media (max-width:1200px){
+        text-align:left;
+    }
+    img{
+        @media (max-width:1200px){
+        display: inline-block;
+        float: left;
+        margin:1rem 2rem;
+    }
+    }
     h3{
+        @media (max-width:1200px){
+            margin-top: 3.5rem;
+        }   
         letter-spacing: .3rem;
     }
     p{

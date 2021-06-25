@@ -10,6 +10,9 @@
         grid-template-columns: 100%;
         grid-template-rows: repeat(3, 1fr);
     }
+     @media (max-width:650px){
+         padding : 1rem;
+     }
     // background-image: url(../../assets/Home/bg-pattern-leaf.svg);
     
 }
@@ -25,7 +28,6 @@
     }
     img{
         @media (max-width:1200px){
-        // display: inline-block;
         float: left;
         margin:1rem 2rem;
         @media (max-width:650px){

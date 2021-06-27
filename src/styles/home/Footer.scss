@@ -1,0 +1,37 @@
+.talk{
+    background-color: $peach;
+    border-radius: 1rem;
+    display: grid;
+    margin: 4rem 7rem;
+    padding: 5rem 4rem ;
+    color:$white;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1;
+    background-image: url(../../assets/Home/bg-pattern-call-to-action.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    h1{
+        width: 60%;
+    }
+    p{
+        font-weight: 200;
+    }
+    .touch-button{
+        text-align: right;
+        padding-top: 5rem;
+        // margin-left: 3rem;
+
+    }
+    button{
+        background-color: $white;
+        border-radius: .9rem;
+        color: $dark-grey;
+        padding: 1rem 1.5rem;
+        margin: .5rem;
+        border: none;
+        position: center;
+        &:hover{
+            background-color: $light-peach;
+        }
+    }
+}

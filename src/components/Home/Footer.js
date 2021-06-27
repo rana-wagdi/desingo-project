@@ -11,7 +11,7 @@ const Footer = () => {
           </p>
         </div>
         <div className="touch-button">
-            <button>GET IN TOUCH</button>
+            <button className="button">GET IN TOUCH</button>
         </div>
       </div>
     );

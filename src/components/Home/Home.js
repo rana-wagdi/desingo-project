@@ -13,7 +13,7 @@ const Home = () => {
             fully responsive websites, app design, and engaging brand
             experiences. Find out more about our services.
           </p>
-          <button>LEARN MORE</button>
+          <button className="button">LEARN MORE</button>
         </div>
         <div className="img-mobile">
           <img src={mobile} alt="mobile" />

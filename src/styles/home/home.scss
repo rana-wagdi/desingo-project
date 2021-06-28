@@ -91,6 +91,12 @@
            margin:-10rem -9rem;
 
     }
-        
+    @media (max-width: 350px) {
+        margin:-10rem -11rem;
+    }
+        @media (max-width: 302px) {
+             margin:0rem -11rem;
+
+        }
     }
 }

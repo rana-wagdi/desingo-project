@@ -22,6 +22,10 @@
          margin: 3rem 2rem;
          padding: 1rem 1rem;
      }
+     @media (max-width: 350px) {
+         margin: 3rem 2rem;
+         padding: .4rem 0rem;
+     }
     h1{
         width: 60%;
         @media (max-width:1200px){

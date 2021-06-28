@@ -2,12 +2,20 @@
  .header{
     display: flex;
     justify-content: space-between;
-    margin: 30px;
+    margin: 2rem 6rem;
+    @media (max-width: 950px) {
+        margin: 2rem 4rem;
+    }
+     @media (max-width: 600px) {
+        margin: 2rem;
+    }
 }
 .logo{
-    margin: 15px 0;
+    margin: 20px 0;
 
-    
+    @media (max-width: 950px) {
+        margin: 20px 15px 0 0 ;
+    }
      @media (max-width: 700px) {
         margin: 0 15px 0 0 ;
     }

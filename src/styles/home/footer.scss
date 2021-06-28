@@ -2,7 +2,7 @@
     background-color: $peach;
     border-radius: 1rem;
     display: grid;
-    margin: 4rem 4rem;
+    margin: 4rem 4rem 0;
     padding: 3rem 4rem ;
     color:$white;
     grid-template-columns: repeat(2, 1fr);
@@ -10,6 +10,8 @@
     background-image: url(../../assets/Home/bg-pattern-call-to-action.svg);
     background-repeat: no-repeat;
     background-position: right;
+    z-index: 7;
+    position: relative;
      @media (max-width:1200px){
          grid-template-columns: 100%;
          grid-template-rows: 2;
@@ -19,11 +21,11 @@
          
      }
      @media (max-width:600px){
-         margin: 3rem 2rem;
+         margin: 3rem 2rem 0;
          padding: 1rem 1rem;
      }
      @media (max-width: 350px) {
-         margin: 3rem 2rem;
+         margin: 3rem 2rem 0;
          padding: .4rem 0rem;
      }
     h1{
@@ -59,4 +61,13 @@
 
     }
 
+}
+
+.footer{
+    height: 20rem;
+    background-color: $black;
+    background-size: cover;
+    margin-top: -4rem;
+    
+    
 }

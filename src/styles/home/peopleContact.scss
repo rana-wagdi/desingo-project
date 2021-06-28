@@ -1,13 +1,13 @@
 .peopleContact{
     display: grid;
     position: relative;
-    padding: 0 4rem;
+    padding: 0 6rem;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1;
     grid-column-gap: 5rem;
     justify-content: center;
     overflow:hidden;
-     @media (max-width:1200px){
+    @media (max-width:1200px){
         grid-template-columns: 100%;
         grid-template-rows: repeat(3, 1fr);
     }

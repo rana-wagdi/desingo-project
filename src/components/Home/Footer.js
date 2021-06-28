@@ -3,6 +3,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
+      <div>
       <div className="talk">
         <div>
           <h1>Let’s talk about your project</h1>
@@ -15,6 +16,11 @@ const Footer = () => {
             <button className="button">GET IN TOUCH</button>
         </div>
       </div>
+      <footer className="footer">
+
+      </footer>
+      </div>
+      
     );
 }
 export default Footer;

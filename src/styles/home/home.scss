@@ -5,11 +5,18 @@
     grid-template-rows: 40rem;
     background-size: 50%;
     border-radius: .8rem;
-    margin: 3rem 1.5rem ;
+    margin: 3rem 6rem;
     overflow: hidden;
     background-image: url('../../assets/Home/bg-pattern-hero-home.svg');
     background-repeat: no-repeat;
     background-position-x: right;
+    @media (max-width: 950px) {
+        background-size: 100%;
+        margin: 3rem 4rem;
+        background-position-x: 10rem;
+        background-position-y: center;
+        height: 43rem;
+    }
      @media (max-width: 800px) {
         grid-template-columns: auto;
         grid-template-rows: 34rem;
@@ -38,9 +45,7 @@
         margin: auto;
         width: 70%;
     }
-     @media (max-width: 600px) {
-        text-align: center;
-        margin: auto;
+     @media (max-width: 650px) {
         width: 98%;
     }
     h1{
@@ -79,8 +84,8 @@
             margin:-10rem auto;
             top:0%;
     }
-        @media (max-width: 610px) {
-           margin:-10rem -5rem;
+        @media (max-width: 750px){
+           margin:-6rem -5rem;
 
     }
     @media (max-width: 435px) {

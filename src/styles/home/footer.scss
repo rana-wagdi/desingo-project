@@ -88,9 +88,13 @@
         img{
             height: 40px;
         }
-         
     }
-
+      @media (max-width:400px){
+         img{
+             margin: 0.6rem 0;
+            height: 24px ;
+         } 
+        }
 }
 .line-logo{
     @media (min-width:710px){
@@ -100,7 +104,7 @@
     height: 1px;
     border: 0; 
     border-top: 1px solid $dark-grey;
-    width: 80%;
+    width: 90%;
     margin-top: 1.5rem;
 }
 .link-footer{
@@ -122,9 +126,10 @@
         cursor: pointer;
         letter-spacing: .1rem;
         @media (max-width:710px){
+        margin: 2rem 0rem;
         font-size: 1.1rem;
-        font-weight: 800;
-        color:$dark-grey;
+        font-weight: 400;
+        color: $light-grey ;
     }
         &:hover{
             border-bottom: 1px solid transparent;

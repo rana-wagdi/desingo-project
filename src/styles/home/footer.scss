@@ -16,11 +16,11 @@
          grid-template-columns: 100%;
          grid-template-rows: 2;
          text-align: center;
-         margin: 3rem 2rem;
+         margin: 2rem 5rem;
          padding: 2rem 2rem;
          
      }
-     @media (max-width:600px){
+     @media (max-width:650px){
          margin: 3rem 2rem 0;
          padding: 1rem 1rem;
      }
@@ -52,7 +52,8 @@
     }
     .touch-button{
         text-align: right;
-        padding-top: 5rem;
+        padding: 5rem;
+
          @media (max-width:1200px){
              text-align: center;
              padding: 2rem;
@@ -64,10 +65,81 @@
 }
 
 .footer{
-    height: 20rem;
     background-color: $black;
-    background-size: cover;
     margin-top: -4rem;
-    
-    
+    padding: 7rem 7rem ;
+    @media (max-width:1200px){
+         padding: 7rem 2rem ;
+    }
 }
+.nav-footer{
+    display:flex;
+    justify-content: space-between;
+    @media (max-width:710px){
+        display: block;
+    }
+}  
+.logo-footer{
+      @extend .logo;
+     @media (max-width:710px){
+        margin: 0.6rem 1rem ;
+        text-align: center;
+        justify-content: center;
+        img{
+            height: 40px;
+        }
+         
+    }
+
+}
+.line-logo{
+    @media (min-width:710px){
+        display: none;
+    }
+    display: block;
+    height: 1px;
+    border: 0; 
+    border-top: 1px solid $dark-grey;
+    width: 80%;
+    margin-top: 1.5rem;
+}
+.link-footer{
+    display:flex;
+    text-align:center;
+    overflow: hidden;
+    color:$white;
+     @media (max-width:710px){
+        display: block;
+        flex-direction: column;
+    }
+    
+      li{
+        margin: 0.6rem 1rem ;
+        text-align:center;
+        list-style: none;
+        font-weight: 300;
+        font-size: .9rem;
+        cursor: pointer;
+        letter-spacing: .1rem;
+        @media (max-width:710px){
+        font-size: 1.1rem;
+        font-weight: 800;
+        color:$dark-grey;
+    }
+        &:hover{
+            border-bottom: 1px solid transparent;
+            transition-duration: 1s;
+        }
+    }
+}
+.line{
+    display: block;
+    height: 1px;
+    border: 0; 
+    border-top: 1px solid $dark-grey;
+    @media (max-width:710px){
+        display: none;
+    }
+}
+// .link-footer{
+//     color: white;

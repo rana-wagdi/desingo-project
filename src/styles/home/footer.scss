@@ -121,8 +121,10 @@
         list-style: none;
         
         cursor: pointer;
-    
-    }
+        @media (max-width:710px){
+             margin: 2rem 1rem ;
+             margin-right: 3rem;
+        }
      a{
             margin: 0.6rem 1rem ;
             text-decoration: none ;
@@ -131,11 +133,10 @@
             font-size: .9rem;
             letter-spacing: .1rem;
             @media (max-width:710px){
-                margin: 2rem 1rem ;
-                margin-right: 3rem;
                 font-size: 1.1rem;
                 font-weight: 400;
         }
+    }
         &:hover{
             border-bottom: 1px solid transparent;
             transition-duration: 1s;

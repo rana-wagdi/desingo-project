@@ -81,13 +81,16 @@
         width: 100% ;
         overflow: hidden;
         left: 0;
-        color: $white;
         z-index: 100;
     }
     li{
          text-decoration: none;
          width: 100% !important;
          padding: 1rem;
+    }
+    a{
+        text-decoration: none ;
+            color: $white;
     }
 }
 

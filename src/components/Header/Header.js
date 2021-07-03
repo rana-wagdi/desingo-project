@@ -47,9 +47,15 @@ const Header = () => {
           {open ? closeIcon : humburerIcon}
           {open && (
             <ul className="header-links-burger">
-              <li>OUR COMPANY</li>
-              <li>LOCATION</li>
-              <li>CONTACT</li>
+              <li>
+                <Link to="/ourcompany"> OUR COMPANY</Link>
+              </li>
+              <li>
+            <Link to=""> LOCATION</Link>
+          </li>
+          <li>
+            <Link to=""> CONTACT</Link>
+          </li>
             </ul>
           )}
         </div>

@@ -178,8 +178,14 @@
     }
     span{
         cursor:pointer;
-        color: $peach;
         margin: .3rem ;
+        a{
+            text-decoration: none;
+            color: $peach;
+            &:hover{
+            color: $peach-bg;
+        }
+        }
 
     }
     .social-icon{

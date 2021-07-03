@@ -49,19 +49,29 @@ const Footer = () => {
             </div>
             <div className="icon">
               <span>
-                <AiFillFacebook  className="social-icon" size="30px" />
+                <a href="https://www.facebook.com/">
+                  <AiFillFacebook className="social-icon" size="30px" />
+                </a>
               </span>
               <span>
-                <AiFillYoutube className="social-icon" size="30px" />
+                <a href="https://www.youtube.com/">
+                  <AiFillYoutube className="social-icon" size="30px" />
+                </a>
               </span>
               <span>
-                <AiOutlineTwitter className="social-icon" size="30px" />
+                <a href="https://twitter.com/?lang=en">
+                  <AiOutlineTwitter className="social-icon" size="30px" />
+                </a>
               </span>
               <span>
-                <FaPinterest className="social-icon" size="30px"/>
+                <a href="https://www.pinterest.com/">
+                  <FaPinterest className="social-icon" size="30px" />
+                </a>
               </span>
-              <span> 
-                <FiInstagram className="social-icon" size="30px"/>
+              <span>
+                <a href="https://www.instagram.com/">
+                  <FiInstagram className="social-icon" size="30px" />
+                </a>
               </span>
             </div>
           </div>

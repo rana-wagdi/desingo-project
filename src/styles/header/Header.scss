@@ -11,8 +11,9 @@
     }
 }
 .logo{
-    margin: 20px 0;
 
+    margin: 20px 0;
+    cursor: pointer ;
     @media (max-width: 950px) {
         margin: 20px 15px 0 0 ;
     }
@@ -47,12 +48,17 @@
     }
 
     li{
-        margin: 0.6rem 1rem ;
         text-align:center;
         list-style: none;
-        font-weight: 400;
-        font-size: 1.1rem;
+        
         cursor: pointer;
+        a{
+            margin: 0.6rem 1rem ;
+            text-decoration: none ;
+            color: $black;
+            font-weight: 400;
+            font-size: 1.1rem;
+        }
         &:hover{
             border-bottom: 1px solid transparent;
             transition-duration: 1s;

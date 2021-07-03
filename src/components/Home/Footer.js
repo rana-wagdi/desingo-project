@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import logo from "../../assets/Home/logo-light.png";
 import { AiFillFacebook } from "react-icons/ai";
 import { AiFillYoutube } from "react-icons/ai";
@@ -29,9 +30,15 @@ const Footer = () => {
             </div>
             <hr className="line-logo" />
             <ul className="link-footer">
-              <li>OUR COMPANY</li>
-              <li>LOCATION</li>
-              <li>CONTACT</li>
+              <li>
+                <Link to="/ourcompany"> OUR COMPANY</Link>
+              </li>
+              <li>
+                <Link to="/"> LOCATION</Link>
+              </li>
+              <li>
+                <Link to="/"> CONTACT</Link>
+              </li>
             </ul>
           </div>
           <hr className="line" />

@@ -146,5 +146,46 @@
         display: none;
     }
 }
-// .link-footer{
-//     color: white;
+
+.contact-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1;
+    margin-top: 3rem ;
+    color:$very-dark-grey;
+     @media (max-width:710px){
+         grid-template-columns: 100%;
+         grid-template-rows: 3;
+         text-align: center;
+     }
+     .contactUs{
+        @media (max-width:710px){
+         margin-top: 2rem;
+     }
+     }
+    p{
+        font-weight: 900;
+    }
+    .icon{
+        padding-left: 9rem;
+        @media (max-width:1200px){
+            padding-left: 5rem;
+        }
+         @media (max-width:900px){
+            padding-left: 1rem;
+        }
+
+    }
+    span{
+        cursor:pointer;
+        color: $peach;
+        margin: .3rem ;
+
+    }
+    .social-icon{
+        margin-top: 6rem;
+         @media (max-width:710px){
+         margin-top: 1.5rem;
+     }
+    }
+}

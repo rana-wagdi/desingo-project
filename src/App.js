@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Main from './components/Home/Main';
@@ -18,7 +18,6 @@ function App() {
           <Main />
           <PeopleContact />
         </Route>
-        {/* <Route path="/" exact component={} /> */}
         <Route path="/ourcompany" exact component={OurCompany} />
         <Footer />
       </div>

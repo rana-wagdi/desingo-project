@@ -28,8 +28,7 @@ const Header = () => {
       <header className="header">
         <div className="logo">
           <Link to="/">
-            {" "}
-            <img src={logo} alt="logo" />{" "}
+            <img src={logo} alt="logo" />
           </Link>
         </div>
         <ul className="header-links">

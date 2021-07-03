@@ -10,6 +10,8 @@ const Header = () => {
 
  
   const [open, setOpen] = useState(false);
+  const showMenu = () => setOpen(!open); //to close when click
+
   const humburerIcon = 
     <AiOutlineMenu
       className="humburger"
@@ -43,7 +45,7 @@ const Header = () => {
           </li>
         </ul>
 
-        <div className="header-burger">
+        <div className="header-burger" onClick={showMenu}>
           {open ? closeIcon : humburerIcon}
           {open && (
             <ul className="header-links-burger">
@@ -51,11 +53,11 @@ const Header = () => {
                 <Link to="/ourcompany"> OUR COMPANY</Link>
               </li>
               <li>
-            <Link to=""> LOCATION</Link>
-          </li>
-          <li>
-            <Link to=""> CONTACT</Link>
-          </li>
+                <Link to=""> LOCATION</Link>
+              </li>
+              <li>
+                <Link to=""> CONTACT</Link>
+              </li>
             </ul>
           )}
         </div>

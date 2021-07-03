@@ -53,7 +53,6 @@
     .touch-button{
         text-align: right;
         padding: 5rem;
-
          @media (max-width:1200px){
              text-align: center;
              padding: 2rem;
@@ -103,7 +102,7 @@
     display: block;
     height: 1px;
     border: 0; 
-    border-top: 1px solid $dark-grey;
+    border-top: 1px solid $very-dark-grey;
     width: 90%;
     margin-top: 1.5rem;
 }
@@ -114,7 +113,7 @@
     color:$white;
      @media (max-width:710px){
         display: block;
-        flex-direction: column;
+        // flex-direction: column;
     }
     
       li{
@@ -126,7 +125,8 @@
         cursor: pointer;
         letter-spacing: .1rem;
         @media (max-width:710px){
-        margin: 2rem 0rem;
+        margin: 2rem 1rem ;
+        margin-right: 3rem;
         font-size: 1.1rem;
         font-weight: 400;
         color: $light-grey ;
@@ -141,7 +141,7 @@
     display: block;
     height: 1px;
     border: 0; 
-    border-top: 1px solid $dark-grey;
+    border-top: 1px solid $very-dark-grey;
     @media (max-width:710px){
         display: none;
     }

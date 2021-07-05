@@ -1,37 +1,48 @@
 .about{
     display:grid;
     margin: 3rem 8rem ;
-    grid-template-columns: 60% 30%;
+    grid-template-columns: 60% 40%;
     background-color: $peach;
     border-radius: 1rem;
     overflow: hidden;
     height: 30rem;
+    @media (max-width:1200px){
+                margin: 3rem 4rem ;
+        }
     @media (max-width:900px){
-        margin: 3rem 6rem ;
+        
         grid-template-columns: auto ;
         grid-template-rows: repeat(2, 1fr);
         height: auto;
     }
     .about-us{
-        padding: 6rem 6rem ;
+        padding: 6rem;
         color:$peach-bg;
         background-image: url('../../assets/pages/ourcompany/bg-pattern-hero-about-desktop.svg');
         background-repeat: no-repeat;
+        line-height: 1.8rem ;
         @media (max-width:1200px){
-            padding: 4rem ;
+            padding: 3rem ;
         }
-        //  @media (max-width:900px){
-        //     padding: 2rem ;
-        //     grid-row: 2 ;
-        // }
+         @media (max-width:900px){
+            text-align: center;
+        }
     }
     h1{
         font-size: 3rem;
         font-weight: 500 ;
+        margin-bottom: 3rem;
     }
     .about-img{
+        background-image: url(../../assets/pages/ourcompany/image-about-hero.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        background-position: center;
         @media (max-width:900px){
             width: 100%;
+            
+            background-image: url(../../assets/pages/ourcompany/image-about-heroo.jpg);
             text-align: center;
             grid-row: 1 ;
      } 

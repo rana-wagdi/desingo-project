@@ -5,7 +5,7 @@ import Home from './components/Home/Home';
 import Main from './components/Home/Main';
 import PeopleContact from './components/Home/PeopleContact';
 import Footer from './components/Home/Footer';
-import About from './components/pages/OurCompany/About';
+import OurCompany from "./components/pages/OurCompany/OurCompany";
 
 import './App.scss'
 function App() {
@@ -18,7 +18,7 @@ function App() {
           <Main />
           <PeopleContact />
         </Route>
-        <Route path="/ourCompany" exact component={About} />
+        <Route path="/ourCompany" exact component={OurCompany} />
         <Footer />
       </div>
     </Router>

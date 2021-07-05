@@ -44,7 +44,6 @@
         background-image: url(../../assets/pages/ourcompany/image-about-hero.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        object-fit: cover;
         background-position: center;
         @media (max-width:900px){
             width: 100%;
@@ -53,5 +52,9 @@
             text-align: center;
             grid-row: 1 ;
      } 
+     @media (max-width:900px){
+          background-image: url(../../assets/pages/ourcompany/image-about-hero-mb.jpg);
+     }
+
     }
 }

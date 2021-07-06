@@ -13,7 +13,7 @@ const Talent = () => {
             ensuring success in its given market. We are constantly updating our
             skills in a myriad of platforms.
             </p>
-            <p> Our team is multi-disciplinary and
+            <p className="talent-team"> Our team is multi-disciplinary and
             we are not merely interested in form — content and meaning are just
             as important. We give great importance to craftsmanship, service,
             and prompt delivery. Clients have always been impressed with our

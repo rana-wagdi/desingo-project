@@ -1,14 +1,19 @@
-.about{
-    display:grid;
-    margin: 3rem 8rem ;
-    grid-template-columns: 60% 40%;
-    background-color: $peach;
-    border-radius: 1rem;
-    overflow: hidden;
-    height: 30rem;
-    @media (max-width:1200px){
+.about-talent{
+     display:grid;
+     margin: 3rem 8rem ;
+     border-radius: 1rem;
+     overflow: hidden;
+      @media (max-width:1200px){
              margin: 3rem 4rem ;
         }
+}
+
+
+.about{
+    @extend .about-talent;
+    grid-template-columns: 60% 40%;
+    background-color: $peach;
+    height: 30rem;
     @media (max-width:900px){
         grid-template-columns: auto ;
         grid-template-rows: repeat(2, 1fr);
@@ -65,16 +70,11 @@
 /////////// talent///////////
 
 .talent{
-    display: grid;
+    @extend .about-talent;
     background-color: $peach-bg;
-    border-radius: 1rem;
-    margin: 3rem 8rem ;
     grid-template-columns: 42% 58% ;
     height: 40rem ;
-    overflow: hidden;
-     @media (max-width:1200px){
-             margin: 3rem 4rem ;
-        }
+
      @media (max-width:900px){
         grid-template-columns: auto ;
         grid-template-rows: repeat(2, 1fr);
@@ -92,6 +92,7 @@
         background-position: center;
        @media (max-width:600px){
              background-image: url(../../assets/pages/ourcompany/image-world-class-talent-mb.jpg);
+             object-fit: cover;
         }
  }
  .world-talent{

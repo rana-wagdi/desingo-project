@@ -131,5 +131,43 @@
 //  Deal//////
 
 .deal{
+    margin: 5rem 3rem;
+    text-align:center;
+    .deal-location{
+        display: grid;
+        padding: 2rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1;
+        @media (max-width:900px){
+        grid-template-columns: auto ;
+        grid-template-rows: repeat(3, 1fr);
+        height: auto;
+    }
+    }
+    h2{
+        font-weight: 300;
+        letter-spacing: .1rem ;
+    }
+    .deal-country{
+        margin: 2rem auto;
+    }
 
+    img{
+        background: url(../../assets/Home/bg-pattern-small-circle.svg);
+        background-position: center
+    }
+    button{
+        background-color: $peach;
+        padding: 1rem 2rem;
+        color: $white;
+        border: none;
+        border-radius: .5rem;
+        font-size: 1rem;
+        letter-spacing: .1rem;
+        font-weight: 300;
+        cursor: pointer;
+        &:hover{
+            background-color: $light-peach;
+        }
+    }
 }

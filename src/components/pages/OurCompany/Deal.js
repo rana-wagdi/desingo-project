@@ -34,7 +34,7 @@ const Deal = () => {
               perspective to every opportunity. We make design and technology
               more accessible and give you tools to measure success.
             </p>
-            <p>
+            <p  className="deal__text__pragraph">
             We are visual storytellers in appealing and captivating ways. By combining business and marketing strategies, we inspire audiences to take action and drive real results.
             </p>
           </div>

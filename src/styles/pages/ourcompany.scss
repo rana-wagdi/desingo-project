@@ -131,16 +131,22 @@
 .deal{
     margin: 5rem 3rem;
     text-align:center;
+    @media (max-width:700px){
+        margin: 0;
+        border-radius: 0;
+     }
     .deal-location{
         display: grid;
         padding: 2rem;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1;
+        margin: 5rem 0;
         @media (max-width:900px){
         grid-template-columns: auto ;
         grid-template-rows: repeat(3, 1fr);
         height: auto;
     }
+
     }
     h2{
         font-weight: 300;
@@ -207,6 +213,9 @@
         font-weight: 400;
         margin-bottom: 2rem;
     }
+    .deal__text__pragraph{
+        margin-top: 3rem;
+    }
     .deal-img{
         @extend .about-us;
         background-image: url(../../assets/pages/ourcompany/image-real-deal.jpg);
@@ -217,5 +226,9 @@
             object-fit: cover;
             grid-row: 1 ;
      } 
+     @media (max-width:600px){
+        background-image: url(../../assets/pages/ourcompany/image-real-dealmb.jpg);
+        object-fit: cover;
+   }
     }
 }

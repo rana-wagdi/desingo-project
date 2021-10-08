@@ -1,0 +1,5 @@
+.location__items{
+    @include intialStart;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 1;
+}

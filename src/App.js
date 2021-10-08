@@ -6,6 +6,7 @@ import Main from './components/Home/Main';
 import PeopleContact from './components/Home/PeopleContact';
 import Footer from './components/Home/Footer';
 import OurCompany from "./components/pages/OurCompany/OurCompany";
+import Location from './components/pages/Location/Location';
 
 import './App.scss'
 function App() {
@@ -19,6 +20,8 @@ function App() {
           <PeopleContact />
         </Route>
         <Route path="/ourCompany" exact component={OurCompany} />
+        <Route path="/location" exact component={Location} />
+
         <Footer />
       </div>
     </Router>

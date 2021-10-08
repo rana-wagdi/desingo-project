@@ -1,26 +1,5 @@
-%about-talent{
-     display:grid;
-     margin: 3rem 8rem ;
-     border-radius: 1rem;
-     overflow: hidden;
-      @media (max-width:1200px){
-             margin: 3rem 4rem ;
-        }
-}
-@mixin responsive() {
-    grid-template-columns: auto ;
-    grid-template-rows: repeat(2, 1fr);
-    height: auto;
-   }
-@mixin margin() {
-    border-radius: 0;
-    margin:  0;
-   }
-
-
-
 .about{
-    @extend %about-talent;
+    @include intialStart;
     grid-template-columns: 60% 40%;
     background-color: $peach;
     height: 30rem;
@@ -74,7 +53,7 @@
 /////////// talent///////////
 
 .talent{
-    @extend %about-talent;
+    @include intialStart;
     background-color: $peach-bg;
     grid-template-columns: 42% 58% ;
     height: 40rem ;

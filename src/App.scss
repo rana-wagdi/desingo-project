@@ -2,6 +2,8 @@
 @import 'styles/base/typography';
 @import 'styles/base/buttons';
 @import 'styles/base/placeholder';
+@import 'styles/base/mixins';
+
 
 
 @import 'styles/header/Header.scss';
@@ -11,3 +13,5 @@
 @import 'styles/home/footer.scss';
 
 @import 'styles/pages/ourcompany.scss';
+@import 'styles/pages/location.scss';
+

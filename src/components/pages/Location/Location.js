@@ -26,9 +26,6 @@ const Location = ()=> {
             </div>
             <div className="location__map">
 
-            <div className="img-location">
-
-            </div>
            
             
             </div>

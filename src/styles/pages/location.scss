@@ -1,14 +1,30 @@
-.location__items{
-    @include intialStart;
-    grid-template-columns: 60% 50%;
+.location{
     margin: 3rem 7rem;
+    
+    @media (max-width:1200px){
+
+        text-align: center;
+        margin: 3rem 4rem;
+
+    }
+    // @media (max-width:900px){
+    //     @include responsive;
+    //     width: 70%;
+    //     text-align: center;
+    //     margin: 3rem 1rem;
+    // }
+}
+.location__items{
+    // @include intialStart;
+    display: grid;
+    grid-template-columns: 60% 50%;
     grid-template-rows: 1;
+    margin: 2rem 3rem;
     @media (max-width:1200px){
         @include responsive;
-        width: 70%;
-        text-align: center;
-        margin: 3rem auto;
+
     }
+   
    
 }
 .location__item{
@@ -48,8 +64,8 @@
  
 }
 .location__map {
-    width: 60%;
-    margin: .5rem 2rem ;
+    width: 70%;
+    margin: .5rem 2rem 0 ;
     background-image: url(../../assets/pages/location/image-map-canada.png);
     background-repeat: no-repeat;
     border-radius: 2rem;

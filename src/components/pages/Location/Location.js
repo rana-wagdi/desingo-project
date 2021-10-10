@@ -5,6 +5,7 @@ import canda from '../../../assets/pages/location/image-map-canada.png'
 const Location = ()=> {
 
     return(
+        <div className="location">
         <div className="location__items">
             <div className="location__item">
                 <h1>
@@ -24,13 +25,14 @@ const Location = ()=> {
                 </div>
             </div>
             <div className="location__map">
-            
+
             <div className="img-location">
 
             </div>
            
             
             </div>
+        </div>
         </div>
     )
 }

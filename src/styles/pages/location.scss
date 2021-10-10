@@ -2,10 +2,13 @@
     margin: 3rem 7rem;
     
     @media (max-width:1200px){
-
         text-align: center;
-        margin: 3rem 4rem;
-
+    }
+    @media (max-width:900px){
+        margin: 3rem 2rem;
+    }
+    @media (max-width:750px){
+        margin: 0;
     }
     // @media (max-width:900px){
     //     @include responsive;
@@ -22,7 +25,10 @@
     margin: 2rem 3rem;
     @media (max-width:1200px){
         @include responsive;
-
+    }
+    @media (max-width:750px){
+        margin: 3rem auto;
+   
     }
    
    
@@ -38,20 +44,36 @@
     overflow: hidden;
     height: 42vh;
     @media (max-width:1200px){
-
         text-align: left;
-
+    }
+    @media (max-width:750px){
+        
+        text-align: center;
+        grid-row: 1;
+        height: auto;
+        border-radius: 0;
+        padding: 4rem 0;
     }
     h1{
         color: $peach;
         font-size: 2.7rem;
         letter-spacing: .2rem;
         margin-bottom: 0;
+        @media (max-width:750px){
+            font-size: 2rem;
+            width: 70%; 
+            margin: auto;
+        }
     }
     .country__contant{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
+        @media (max-width:750px){
+            @include responsive;
+            margin: 0 auto 3rem auto;
+            width: 70%;
+        }
         h4{
             font-weight: 800;
            margin-bottom: .4rem;
@@ -75,6 +97,11 @@
         margin:1rem auto ;
         width: 100%;
         grid-row: 1;
+    }
+    @media (max-width:750px){
+        margin:0;
+        border-radius: 0;
+        grid-row: 2;
     }
     
     

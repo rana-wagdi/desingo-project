@@ -1,5 +1,5 @@
 import React from "react";
-import canda from '../../../assets/pages/location/image-map-canada.png'
+
 
 
 const Location = ()=> {
@@ -26,8 +26,7 @@ const Location = ()=> {
             </div>
             <div className="location__map">
 
-           
-            
+        
             </div>
         </div>
         </div>

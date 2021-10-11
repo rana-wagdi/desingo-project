@@ -29,6 +29,58 @@ const Location = ()=> {
         
             </div>
         </div>
+     
+
+     {/* Australia */}
+     <div className="location__items__au">
+           
+            <div className="location__map__au">
+
+        
+            </div>
+            <div className="location__item__au">
+                <h1>
+                    Canada
+                </h1>
+                <div className="country__contant__au">
+                <div>
+                    <h4>Designo Central Office</h4>
+                    <p>3886 Wellington Street</p>
+                    <p>Toronto, Ontario M9C 3J5</p>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <p>P : +1 253-863-8967</p>
+                    <p>M : contact@desingo.co</p>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    {/* unitedKingdom */}
+        <div className="location__items__king">
+            <div className="location__item__king">
+                <h1>
+                    United Kingdom
+                </h1>
+                <div className="country__contant__king">
+                <div>
+                    <h4>Designo UK Office</h4>
+                    <p>13 Colorado Way</p>
+                    <p>Rhyd-y-fro SA8 9GA</p>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <p>P : 07831151400</p>
+                    <p>M : contact@desingo.uk</p>
+                </div>
+                </div>
+            </div>
+            <div className="location__map__king">
+
+        
+            </div>
+        </div>
         </div>
     )
 }

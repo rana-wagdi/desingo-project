@@ -10,12 +10,7 @@
     @media (max-width:750px){
         margin: 0;
     }
-    // @media (max-width:900px){
-    //     @include responsive;
-    //     width: 70%;
-    //     text-align: center;
-    //     margin: 3rem 1rem;
-    // }
+
 }
 .location__items{
     // @include intialStart;
@@ -25,6 +20,8 @@
     margin: 2rem 3rem;
     @media (max-width:1200px){
         @include responsive;
+         margin: 5rem 3rem;
+
     }
     @media (max-width:750px){
         margin: 3rem auto;
@@ -65,25 +62,26 @@
             margin: auto;
         }
     }
-    .country__contant{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 2rem;
-        @media (max-width:750px){
-            @include responsive;
-            margin: 0 auto ;
-            width: 70%;
-        }
-        h4{
-            font-weight: 800;
-           margin-bottom: .4rem;
-        }
-        p{
-            margin-top: .2rem;
-            margin-bottom: .2rem;
-        }
-    }
+   
  
+}
+.country__contant{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    @media (max-width:750px){
+        @include responsive;
+        margin: 0 auto ;
+        width: 70%;
+    }
+    h4{
+        font-weight: 800;
+       margin-bottom: .4rem;
+    }
+    p{
+        margin-top: .2rem;
+        margin-bottom: .2rem;
+    }
 }
 .location__map {
     width: 70%;
@@ -105,4 +103,53 @@
     }
     
     
+}
+
+/************/
+.location__items__au{
+    @extend .location__items;
+    grid-template-columns: 40% 58%;
+    margin: 2rem 3rem;
+    .location__map__au{
+        @extend .location__map;
+        width: 80%;
+        margin: .5rem 0 ;
+        background-image: url(../../assets/pages/location/image-map-australia.png);
+        @media (max-width:1200px){
+            background-image: url(../../assets/pages/location/image-map-uk.png);
+            grid-row: 2;
+        }
+        
+    }
+    .location__item__au{
+        @extend .location__item;
+        @media (max-width:1200px){
+           
+            grid-row: 1;
+        }
+        
+    }
+    .country__contant__au{
+        @extend .country__contant;
+    }
+}
+
+
+/*******/
+.location__items__king{
+    @extend .location__items;
+    .location__item__king{
+        @extend .location__item;
+    }
+    .country__contant__king{
+        @extend .country__contant;
+    }
+    .location__map__king{
+        @extend .location__map;
+        background-image: url(../../assets/pages/location/image-map-united-kingdom.png);
+        @media (max-width:1200px){
+            background-image: url(../../assets/pages/location/image-map-uk.png);
+
+        }
+    }
 }

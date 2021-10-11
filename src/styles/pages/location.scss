@@ -98,7 +98,8 @@
     background-image: url(../../assets/pages/location/image-map-canada.png);
     background-repeat: no-repeat;
     border-radius: 2rem;
-    background-size: 100%;
+    background-size: cover;
+    object-fit: cover;
     @media (max-width:1200px){
         background-image: url(../../assets/pages/location/image-map-canadatba.png);
         margin:1rem auto ;

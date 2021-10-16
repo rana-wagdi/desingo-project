@@ -1,5 +1,5 @@
 import React from "react";
-
+import MainFooter from "../../../sharedComponent/mainFooter";
 
 
 const Location = ()=> {
@@ -81,6 +81,7 @@ const Location = ()=> {
         
             </div>
         </div>
+        <MainFooter />
         </div>
     )
 }

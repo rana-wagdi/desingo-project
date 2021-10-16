@@ -13,7 +13,6 @@
 
 }
 .location__items{
-    // @include intialStart;
     display: grid;
     grid-template-columns: 60% 50%;
     grid-template-rows: 1;
@@ -21,17 +20,10 @@
     @media (max-width:1200px){
         @include responsive;
          margin: 5rem 3rem;
-
     }
     @media (max-width:750px){
         margin: 3rem auto;
-   
     }
-    // @media (max-width: 400px){
-    //     margin: 0;
-    // }
-   
-   
 }
 .location__item{
     background-color: #fdf3f0;
@@ -120,19 +112,7 @@
 }
 
 /************/
-// display: grid;
-// grid-template-columns: 60% 50%;
-// grid-template-rows: 1;
-// margin: 2rem 3rem;
-// @media (max-width:1200px){
-//     @include responsive;
-//      margin: 5rem 3rem;
 
-// }
-// @media (max-width:750px){
-//     margin: 3rem auto;
-
-// }
 
 .location__items__au{
     display: grid;
@@ -149,7 +129,7 @@
 }
     .location__map__au{
         @extend .location__map;
-        width: 80%;
+        width: 90%;
         margin: .5rem 0 ;
         background-image: url(../../assets/pages/location/image-map-australia.png);
         @media (max-width:1200px){

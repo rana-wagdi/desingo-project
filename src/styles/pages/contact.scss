@@ -1,5 +1,8 @@
 .contact{
     margin: 3rem 9rem 15rem;
+    @media (max-width:1400px){
+        margin: 3rem 0rem 15rem;
+    }
 }
 .contact__content{
     display: grid;
@@ -7,7 +10,22 @@
     grid-template-columns: 60% 40%;
     background-color: $peach;  
     border-radius: 1rem;
+    @media (max-width:1000px){
+        margin: 0 3rem ;
+    }
+    @media (max-width:900px){
 
+        grid-template-columns: auto ;
+     grid-template-rows: 30% 65%;
+   height: auto;
+        // width: 80%;
+        background-image: url(../../assets/pages/contact/bg-pattern-hero-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: 80%;
+        margin-bottom: 0;
+    // background-position: left;
+    // background-size: cover;
+    }
 
 .contact__content__contactUs{
     padding: 6rem 7rem 9rem;
@@ -15,11 +33,19 @@
     background-image: url(../../assets/pages/contact/bg-pattern-hero-desktop.svg);
     background-repeat: no-repeat;
     background-position: center;
-
-
+    background-size: cover;
+    @media (max-width:1000px){
+        padding: 5rem 3rem 9rem;
+    }
+    @media (max-width:900px){
+        @include responsive;
+        background-image: none;
+        width: 80%;
+        padding: 2rem 3rem 0;
+    }
      h1{
         font-size: 3.1rem;
-        
+        margin-bottom: 0;
     }
 
     
@@ -27,23 +53,75 @@
 }
 
 .contact__content__inputs{
-    margin: 1rem 0;
+    margin: 1rem 6rem 1rem 0;
+
+    @media (max-width:900px){
+        @include responsive;
+        background-image: none;
+        width: 90%;
+        padding: 0rem 3rem 0;
+    }
     input{
         background-color: transparent;
         border: none ;
         border-bottom: 1px solid $white;
-        padding: 3rem 1rem .2rem;
-        width: 70%;
-       
+        padding: 2.7rem 1rem .2rem;
+        // padding: 30px 10px 7px;
+        font-size: 1.1rem;
+
+        width: 90%;
+        color: $white;
+        :focus {
+            outline: none;
+        }
+
     }
+    input:focus{
+    outline: none;
+    color: $white;
+    // font-size: .9rem;
+}
     ::placeholder{
         color: $white;
-        font-size: 1rem;
-        opacity: .3;
+        font-size: .9rem;
+        opacity: .4;
+       
     }
+    
     textarea{
-        margin: 3rem 0;
+        margin: 3rem 0 1rem;
         background-color: transparent;
+        border: none;
+        border-bottom: 1px solid $white;
+        resize: none;
+        width: 95%;
+        color: $white;
+        font-size: 1.1rem;
     }
-     
+    textarea:focus{
+        outline: none;
+        color: $white;
+        font-size: 1.1rem;
+    }
+    button{
+        float: right;
+        padding: 1rem 3rem;
+        background-color: $white;
+        text-transform: uppercase;
+        border: none;
+        border-radius: .5rem;
+        font-size: .9rem;
+        letter-spacing: .1rem;
+        cursor: pointer;
+        margin-bottom: 3rem;
+        &:hover{
+            background-color: $light-peach;
+            color: $white;
+            transition: .2s;
+        }
+    }
 }
+
+// input:focus{
+//     outline: none;
+// }

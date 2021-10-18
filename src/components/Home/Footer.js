@@ -8,7 +8,10 @@ import { FaPinterest } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
 
 
-const Footer = () => {
+const Footer = (props) => {
+
+
+
     return (
       <div>
         
@@ -20,7 +23,7 @@ const Footer = () => {
             <hr className="line-logo" />
             <ul className="link-footer">
               <li>
-                <Link to="/ourcompany"> OUR COMPANY</Link>
+                <Link  tabIndex="0" to="/ourcompany"> OUR COMPANY</Link>
               </li>
               <li>
                 <Link to="/location"> LOCATION</Link>

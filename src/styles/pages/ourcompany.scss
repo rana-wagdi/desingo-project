@@ -3,6 +3,7 @@
     grid-template-columns: 60% 40%;
     background-color: $peach;
     height: 30rem;
+
     @media (max-width:900px){
         @include responsive;
     }

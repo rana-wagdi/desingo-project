@@ -10,16 +10,16 @@ import OurCompany from "./components/pages/OurCompany/OurCompany";
 import Location from './components/pages/Location/Location';
 import Contact from './components/pages/contact/Contact';
 import MainFooter from './sharedComponent/mainFooter';
-import { createBrowserHistory } from "history";
+
 import ScrollTop from './ScrollTop';
 import './App.scss'
 
 const App =()=>{
-  const history = createBrowserHistory();
+
 
 
   return (
-    // onUpdate={() => window.scrollTo(0, 0)} history={browserHistory}
+
     <Router >
     <ScrollTop>
       <div className="App">

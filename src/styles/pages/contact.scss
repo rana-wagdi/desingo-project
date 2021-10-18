@@ -33,6 +33,11 @@
         margin: 0;
         border-radius:0;
         text-align: center;
+        overflow: hidden;
+        background-image: url(../../assets/pages/contact/bg-pattern-hero-contact-mobile.svg);
+        background-size: cover;
+        background-position-x: 0rem;
+        background-position-y: 0rem;
     }
 
     .contact__content__contactUs {
@@ -71,6 +76,12 @@
         background-image: none;
         width: 90%;
         padding: 0rem 3rem 0;
+    }
+    @media (max-width:650px) {
+        padding: 0rem 3rem 0;
+        width: 70%;
+        
+
     }
 
     input {
@@ -126,7 +137,7 @@
         font-size: .9rem;
         letter-spacing: .1rem;
         cursor: pointer;
-        margin-bottom: 3rem;
+        margin: 3rem 0;
 
         &:hover {
             background-color: $light-peach;

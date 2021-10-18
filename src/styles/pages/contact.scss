@@ -1,74 +1,83 @@
-.contact{
+.contact {
     margin: 3rem 9rem 15rem;
-    @media (max-width:1400px){
+
+    @media (max-width:1400px) {
         margin: 3rem 0rem 15rem;
     }
 }
-.contact__content{
-    display: grid;
-    margin: 0 4rem ;
-    grid-template-columns: 60% 40%;
-    background-color: $peach;  
-    border-radius: 1rem;
-    @media (max-width:1000px){
-        margin: 0 3rem ;
-    }
-    @media (max-width:900px){
 
-        grid-template-columns: auto ;
-     grid-template-rows: 30% 65%;
-   height: auto;
-        // width: 80%;
+.contact__content {
+    display: grid;
+    margin: 0 4rem;
+    grid-template-columns: 60% 40%;
+    background-color: $peach;
+    border-radius: 1rem;
+
+    @media (max-width:1000px) {
+        margin: 0 3rem;
+    }
+
+    @media (max-width:900px) {
+        grid-template-columns: auto;
+        grid-template-rows: 30% 70%;
+        height: auto;
         background-image: url(../../assets/pages/contact/bg-pattern-hero-desktop.svg);
         background-repeat: no-repeat;
-        background-size: 80%;
+        background-size: 100%;
         margin-bottom: 0;
-    // background-position: left;
-    // background-size: cover;
+        background-position-x: -9rem;
+        background-position-y: -12rem;
+
+    }
+    @media (max-width:650px) {
+        margin: 0;
+        border-radius:0;
     }
 
-.contact__content__contactUs{
-    padding: 6rem 7rem 9rem;
-    color: $white;
-    background-image: url(../../assets/pages/contact/bg-pattern-hero-desktop.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    @media (max-width:1000px){
-        padding: 5rem 3rem 9rem;
-    }
-    @media (max-width:900px){
-        @include responsive;
-        background-image: none;
-        width: 80%;
-        padding: 2rem 3rem 0;
-    }
-     h1{
-        font-size: 3.1rem;
-        margin-bottom: 0;
-    }
+    .contact__content__contactUs {
+        padding: 6rem 7rem 9rem;
+        color: $white;
+        background-image: url(../../assets/pages/contact/bg-pattern-hero-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
 
-    
+        @media (max-width:1000px) {
+            padding: 5rem 3rem 9rem;
+        }
+
+        @media (max-width:900px) {
+            @include responsive;
+            background-image: none;
+            width: 80%;
+            padding: 2rem 3rem 0;
+        }
+
+        h1 {
+            font-size: 3.1rem;
+            margin-bottom: 0;
+        }
+
+
+    }
 }
-}
 
-.contact__content__inputs{
+.contact__content__inputs {
     margin: 1rem 6rem 1rem 0;
 
-    @media (max-width:900px){
+    @media (max-width:900px) {
         @include responsive;
         background-image: none;
         width: 90%;
         padding: 0rem 3rem 0;
     }
-    input{
+
+    input {
         background-color: transparent;
-        border: none ;
+        border: none;
         border-bottom: 1px solid $white;
         padding: 2.7rem 1rem .2rem;
-        // padding: 30px 10px 7px;
         font-size: 1.1rem;
-
         width: 90%;
         color: $white;
         :focus {
@@ -76,19 +85,20 @@
         }
 
     }
-    input:focus{
-    outline: none;
-    color: $white;
-    // font-size: .9rem;
-}
-    ::placeholder{
+
+    input:focus {
+        outline: none;
+        color: $white;
+    }
+
+    ::placeholder {
         color: $white;
         font-size: .9rem;
         opacity: .4;
-       
+
     }
-    
-    textarea{
+
+    textarea {
         margin: 3rem 0 1rem;
         background-color: transparent;
         border: none;
@@ -98,12 +108,14 @@
         color: $white;
         font-size: 1.1rem;
     }
-    textarea:focus{
+
+    textarea:focus {
         outline: none;
         color: $white;
         font-size: 1.1rem;
     }
-    button{
+
+    button {
         float: right;
         padding: 1rem 3rem;
         background-color: $white;
@@ -114,14 +126,11 @@
         letter-spacing: .1rem;
         cursor: pointer;
         margin-bottom: 3rem;
-        &:hover{
+
+        &:hover {
             background-color: $light-peach;
             color: $white;
             transition: .2s;
         }
     }
 }
-
-// input:focus{
-//     outline: none;
-// }

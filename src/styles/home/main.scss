@@ -1,13 +1,16 @@
 .main{
     display: grid;
     height: 40rem;
-    margin: 3rem 6rem;
+    margin: 3rem 9rem;
     padding: 3rem 0rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 45%);
     grid-column-gap: 1.5rem;
     grid-row-gap: 1.25rem;
     overflow: hidden;
+    @media (max-width: 1200px) {
+        margin: 3rem 5rem;
+    }
     @media (max-width: 900px) {
         grid-template-columns: 100%;
         grid-template-rows: repeat(3, 1fr);

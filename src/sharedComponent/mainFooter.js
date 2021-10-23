@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom";
 
 
 const MainFooter =()=>{
@@ -12,7 +13,9 @@ const MainFooter =()=>{
             </p>
           </div>
           <div className="touch-button">
+          <Link to="/contact">
             <button className="button">GET IN TOUCH</button>
+            </Link>
           </div>
         </div>
     )

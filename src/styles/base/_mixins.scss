@@ -1,3 +1,12 @@
+@mixin background($image ,$size) {
+   background-image: $image;
+   background-size: $size;
+   background-repeat: no-repeat;
+}
+
+
+ 
+
 @mixin intialStart() {
     display:grid;
     margin: 3rem 8rem ;

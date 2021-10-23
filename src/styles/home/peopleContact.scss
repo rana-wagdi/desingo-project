@@ -1,15 +1,18 @@
 .peopleContact{
     display: grid;
     position: relative;
-    padding: 0 6rem;
+    padding: 0 1rem;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1;
     grid-column-gap: 5rem;
     justify-content: center;
     overflow:hidden;
+    margin:  0 9rem;
+   
     @media (max-width:1200px){
         grid-template-columns: 100%;
         grid-template-rows: repeat(3, 1fr);
+        margin: 0 3rem;
     }
      @media (max-width:700px){
          padding : 1rem;
@@ -28,8 +31,9 @@
         text-align:center;
     }
     img{
-        background: url(../../assets/Home/bg-pattern-small-circle.svg);
-        background-repeat: no-repeat;
+       
+        @include background($image:url(../../assets/Home/bg-pattern-small-circle.svg), $size: cover);
+
         background-position: center;
         @media (max-width:1200px){
         float: left;

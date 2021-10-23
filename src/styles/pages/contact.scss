@@ -1,8 +1,8 @@
 .contact {
-    margin: 3rem 9rem 15rem;
+    margin: 3rem 9rem 9rem;
 
     @media (max-width:1400px) {
-        margin: 3rem 0rem 15rem;
+        margin: 3rem 0rem 9rem;
     }
 }
 
@@ -151,12 +151,8 @@
         }
     }
 }
-input:-internal-autofill-selected{
-    background-color: transparent !important;
-}
-input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0px 1000px white inset;
-}
+
+
 .invalid-feedback{
     color: #e02810;
     font-size: .7rem;

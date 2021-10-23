@@ -10,6 +10,8 @@ import OurCompany from "./components/pages/OurCompany/OurCompany";
 import Location from './components/pages/Location/Location';
 import Contact from './components/pages/contact/Contact';
 import MainFooter from './sharedComponent/mainFooter';
+import WebDesign from './components/pages/DesignPages/WebDesign';
+
 
 import ScrollTop from './ScrollTop';
 import './App.scss'
@@ -33,6 +35,8 @@ const App =()=>{
         <Route path="/ourCompany" exact component={OurCompany} />
         <Route path="/location" exact component={Location} />
         <Route path="/contact" exact component={Contact} />
+        <Route path="/webdesign" exact component={WebDesign} />
+
     
      
         <Footer />

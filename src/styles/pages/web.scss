@@ -1,0 +1,121 @@
+.web_design {
+    margin: 3rem 12rem;
+
+    @media (max-width:1400px) {
+        margin: 3rem 7rem;
+    }
+    @media (max-width:900px) {
+        margin: 3rem 5rem;
+    }
+    @media (max-width:780px) {
+        margin: 3rem 0rem;
+    }
+}
+
+.web__header {
+    text-align: center;
+    margin: 2rem auto;
+    background-color: $peach;
+    @include background($image:url(../../assets/pages/webPages/webDesign/bg-pattern-intro-web.svg), $size: 80%);
+    color: $white;
+    padding: 1rem;
+    background-position: right;
+    border-radius: 1rem;
+    @media (max-width:780px) {
+        border-radius: 0;
+    }
+    h1 {
+        font-size: 3rem;
+        margin-bottom: .5rem;
+    }
+
+    p {
+        width: 40%;
+        margin: auto;
+        margin-bottom: 3rem;
+        font-weight: 400;
+
+        @media (max-width:1200px) {
+            width: 60%;
+        }
+    }
+}
+
+.web_design__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2;
+    text-align: center;
+    column-gap: 1.5rem;
+    row-gap: 2rem;
+    margin: 6rem auto;
+
+    @media (max-width:1200px) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1;
+    }
+
+    .web_design__item {
+        border-radius: 1rem;
+        background-color: $light;
+        cursor: pointer;
+        @media (max-width:780px) {
+            width: 60%;
+            margin: 0 auto;
+        }
+      
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 1rem 0 0 1rem;
+        @media (max-width:1200px) {
+            height: 20rem;
+            width: 50%;
+            float: left;
+            
+        }
+        @media (max-width:780px) {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .web_design__item__content{
+        @media (max-width:1200px) {
+            margin: 5rem auto;
+            width: 50%;
+            float: right;
+        }
+        @media (max-width:780px) {
+            width: 100%;
+            margin: 3rem auto;
+
+        }
+      
+    }
+    h2 {
+        color: $peach;
+        margin: 1.6rem auto .5rem;
+        letter-spacing: .3rem;
+        font-weight: 500;
+        font-size: 1.4rem;
+    }
+
+    p {
+        width: 75%;
+        margin: auto;
+        margin-bottom: 1rem;
+        font-weight: 400;
+        @media (max-width:1200px) {
+            width: 90%;
+            
+        }
+        @media (max-width:780px) {
+            width: 60%;
+        
+        }
+
+    }
+}

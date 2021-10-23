@@ -16,7 +16,7 @@ const WebDesign = () => {
                     {webData.map((user) => (
                         <div key={user.id} className="web_design__item">
                             <div>
-                                <img src={user.img} />
+                                <img src={user.img} alt="" />
                             </div>
 
                             <div className="web_design__item__content">

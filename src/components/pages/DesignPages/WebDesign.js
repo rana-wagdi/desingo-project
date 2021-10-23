@@ -1,7 +1,9 @@
 
 import MainFooter from "../../../sharedComponent/mainFooter";
 import webData from "./webData";
+import { Link } from "react-router-dom";
 
+import { IoIosArrowForward } from "react-icons/io";
 
 const WebDesign = () => {
     return (
@@ -18,19 +20,35 @@ const WebDesign = () => {
                             <div>
                                 <img src={user.img} alt="" />
                             </div>
-
                             <div className="web_design__item__content">
 
                                 <h2>{user.title}</h2>
                                 <p>{user.text}</p>
-
                             </div>
                         </div>
                     ))}
+                    </div>
+           <div className="main-app">
+          <div className="app-design">
+          <Link to="/">
+            <h1>APP DESIGN</h1>
+            <p>
+              VIEW PROJECTS <IoIosArrowForward className="arrow-icon" />
+            </p>
+            </Link>
+          </div>
+        </div>
+        <div className="main-graphic">
+          <div className="graphic-design">
+            <h1>GRAPHIC DESIGN</h1>
+            <p>
+              VIEW PROJECTS <IoIosArrowForward className="arrow-icon" />
+            </p>
+          </div>
+        </div>
 
-
-
-                </div>
+                
+                
 
             </div>
             <MainFooter />

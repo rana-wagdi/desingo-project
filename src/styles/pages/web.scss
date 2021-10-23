@@ -22,6 +22,8 @@
     background-position: right;
     border-radius: 1rem;
     @media (max-width:780px) {
+        @include background($image:url(../../assets/pages/webPages/webDesign/bg-pattern-intro-web.svg), $size: 100%);
+        
         border-radius: 0;
     }
     h1 {
@@ -37,6 +39,9 @@
 
         @media (max-width:1200px) {
             width: 60%;
+        }
+        @media (max-width:780px) {
+          width: 90%;
         }
     }
 }

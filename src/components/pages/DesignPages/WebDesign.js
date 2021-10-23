@@ -1,7 +1,7 @@
 
 import MainFooter from "../../../sharedComponent/mainFooter";
 import webData from "./webData";
-import firstPhoto from '../../../assets/pages/webPages/webDesign/image-express.jpg'
+
 
 const WebDesign = () => {
     return (
@@ -14,7 +14,7 @@ const WebDesign = () => {
                 <div className="web_design__items">
 
                     {webData.map((user) => (
-                        <div className="web_design__item">
+                        <div key={user.id} className="web_design__item">
                             <div>
                                 <img src={user.img} />
                             </div>

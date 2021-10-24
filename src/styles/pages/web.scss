@@ -26,7 +26,13 @@
 
     @media (max-width:780px) {
         @include background($image:url(../../assets/pages/webPages/webDesign/bg-pattern-intro-web.svg), $size: 100%);
-
+        
+        border-radius: 0;
+    }
+    @media (max-width:400px) {
+        background-position-x: 2rem;
+        background-position-y: -1rem;
+        
         border-radius: 0;
     }
 

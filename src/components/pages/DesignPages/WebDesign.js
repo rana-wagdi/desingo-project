@@ -13,6 +13,7 @@ const WebDesign = () => {
                     <h1>Web Design</h1>
                     <p>We build websites that serve as powerful marketing tools and bring memorable brand experiences.</p>
                 </header>
+
                 <div className="web_design__items">
 
                     {webData.map((user) => (
@@ -27,30 +28,41 @@ const WebDesign = () => {
                             </div>
                         </div>
                     ))}
+                </div>
+
+
+
+                <div className="web_design__App__items">
+                    <div className="web_design__main-app__item">
+                        <div className="web_design__app-design__content">
+                            <div className="web_design__app-design">
+                                <Link to="/">
+                                    <h1>APP DESIGN</h1>
+                                    <p>
+                                        VIEW PROJECTS <IoIosArrowForward className="arrow-icon" />
+                                    </p>
+                                </Link>
+                            </div>
+                        </div>
                     </div>
-           <div className="main-app">
-          <div className="app-design">
-          <Link to="/">
-            <h1>APP DESIGN</h1>
-            <p>
-              VIEW PROJECTS <IoIosArrowForward className="arrow-icon" />
-            </p>
-            </Link>
-          </div>
-        </div>
-        <div className="main-graphic">
-          <div className="graphic-design">
-            <h1>GRAPHIC DESIGN</h1>
-            <p>
-              VIEW PROJECTS <IoIosArrowForward className="arrow-icon" />
-            </p>
-          </div>
-        </div>
-
-                
-                
-
+                    <div className="web_design__main-app__item">
+                        <div className="web_design__graphic-design__content">
+                            <div className="web_design__graphic-design">
+                                <h1>GRAPHIC DESIGN</h1>
+                                <p>
+                                    VIEW PROJECTS <IoIosArrowForward className="arrow-icon" />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+
+
+
+
+
             <MainFooter />
         </div>
     )

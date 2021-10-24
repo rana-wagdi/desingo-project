@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import mobile from '../../assets/Home/image-hero-phone.png';
 
@@ -13,7 +14,9 @@ const Home = () => {
             fully responsive websites, app design, and engaging brand
             experiences. Find out more about our services.
           </p>
+          <Link to="/appdesign">
           <button className="button">LEARN MORE</button>
+          </Link>
         </div>
         <div className="img-mobile">
           <img src={mobile} alt="mobile" />

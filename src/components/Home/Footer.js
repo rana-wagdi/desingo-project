@@ -18,7 +18,9 @@ const Footer = (props) => {
         <footer className="footer">
           <div className="nav-footer">
             <div className="logo-footer">
+            <Link to="/">
               <img src={logo} alt="logo" />
+              </Link>
             </div>
             <hr className="line-logo" />
             <ul className="link-footer">

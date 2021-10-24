@@ -233,3 +233,13 @@
     @extend .web_design__app-design;
 
 }
+
+
+//////////////////////////////////////////////
+
+// app Page
+
+.web_design__app-design__content__web{
+    @extend .web_design__app-design__content;
+    @include background($image:url(../../assets/Home/image-web-design-large.jpg), $size: cover);
+}

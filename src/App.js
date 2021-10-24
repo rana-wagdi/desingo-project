@@ -11,6 +11,8 @@ import Location from './components/pages/Location/Location';
 import Contact from './components/pages/contact/Contact';
 import MainFooter from './sharedComponent/mainFooter';
 import WebDesign from './components/pages/DesignPages/WebDesign';
+import AppDesign from './components/pages/DesignPages/AppDesign';
+import GraphicDesign from './components/pages/DesignPages/GraphicDesign';
 
 
 import ScrollTop from './ScrollTop';
@@ -36,6 +38,10 @@ const App =()=>{
         <Route path="/location" exact component={Location} />
         <Route path="/contact" exact component={Contact} />
         <Route path="/webdesign" exact component={WebDesign} />
+        <Route path="/appdesign" exact component={AppDesign} />
+        <Route path="/graphicdesign" exact component={GraphicDesign} />
+
+
 
     
      

@@ -1,22 +1,22 @@
 
 import MainFooter from "../../../sharedComponent/mainFooter";
-import webData from "./webData";
+import graphicData from "./graphicData";
 import { Link } from "react-router-dom";
 
 import { IoIosArrowForward } from "react-icons/io";
 
-const WebDesign = () => {
+const GraphicDesign = () => {
     return (
         <div>
             <div className="web_design">
                 <header className="web__header">
-                    <h1>Web Design</h1>
-                    <p>We build websites that serve as powerful marketing tools and bring memorable brand experiences.</p>
+                    <h1>Graphic Design</h1>
+                    <p>We deliver eye-catching branding materials that are tailored to meet your business objectives.</p>
                 </header>
 
                 <div className="web_design__items">
 
-                    {webData.map((user) => (
+                    {graphicData.map((user) => (
                         <div key={user.id} className="web_design__item">
                             <div>
                                 <img src={user.img} alt="" />
@@ -33,11 +33,11 @@ const WebDesign = () => {
 
 
                 <div className="web_design__App__items">
-                    <div className="web_design__main-app__item">
-                        <div className="web_design__app-design__content">
+                <div className="web_design__main-app__item">
+                        <div className="web_design__app-design__content__web">
                             <div className="web_design__app-design">
-                                <Link to="/appdesign">
-                                    <h1>APP DESIGN</h1>
+                                <Link to="/webdesign">
+                                    <h1>WEB DESIGN</h1>
                                     <p>
                                         VIEW PROJECTS <IoIosArrowForward className="arrow-icon" />
                                     </p>
@@ -46,13 +46,13 @@ const WebDesign = () => {
                         </div>
                     </div>
                     <div className="web_design__main-app__item">
-                        <div className="web_design__graphic-design__content">
-                            <div className="web_design__graphic-design">
-                            <Link to="/graphicdesign">
-                                <h1>GRAPHIC DESIGN</h1>
-                                <p>
-                                    VIEW PROJECTS <IoIosArrowForward className="arrow-icon" />
-                                </p>
+                        <div className="web_design__app-design__content">
+                            <div className="web_design__app-design">
+                                <Link to="/appdesign">
+                                    <h1>APP DESIGN</h1>
+                                    <p>
+                                        VIEW PROJECTS <IoIosArrowForward className="arrow-icon" />
+                                    </p>
                                 </Link>
                             </div>
                         </div>
@@ -70,4 +70,4 @@ const WebDesign = () => {
     )
 }
 
-export default WebDesign;
+export default GraphicDesign;

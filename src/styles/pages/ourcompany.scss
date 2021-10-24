@@ -16,6 +16,7 @@
         padding: 6rem;
         color:$peach-bg;
         background-image: url('../../assets/pages/ourcompany/bg-pattern-hero-about-desktop.svg');
+        object-fit: cover;
        @extend %back_img;
         line-height: 1.8rem ;
         @media (max-width:1200px){
@@ -35,6 +36,7 @@
     }
     .about-img{
         background-image: url(../../assets/pages/ourcompany/image-about-hero.jpg);
+        object-fit: cover;
         @extend %back_img;
         @media (max-width:900px){
             width: 100%;
@@ -59,6 +61,7 @@
     grid-template-columns: 42% 58% ;
     height: 40rem ;
     margin-top: 8rem;
+    
      @media (max-width:900px){
         @include responsive;
     }
@@ -68,6 +71,7 @@
 }
 .img-talent{
       background-image: url(../../assets/pages/ourcompany/image-world-class-talent.jpg);
+      object-fit: cover;
       @extend %back_img;
   @media (max-width:900px){
             width: 100%;
@@ -76,7 +80,7 @@
 
        @media (max-width:600px){
              background-image: url(../../assets/pages/ourcompany/image-world-class-talent-mb.jpg);
-             object-fit: cover;
+             object-fit: cover !important;
         }
  }
  .world-talent{
@@ -84,6 +88,7 @@
      background-image: url(../../assets/pages/ourcompany/bg-pattern-three-circles.svg);
      background-repeat: no-repeat;
      background-position: left;
+     object-fit: cover;
      @media (max-width:1200px){
        padding: 7rem 3rem;
     }
@@ -203,6 +208,7 @@
     .deal-img{
         @extend .about-us;
         background-image: url(../../assets/pages/ourcompany/image-real-deal.jpg);
+        object-fit: cover;
         @media (max-width:900px){
 
             background-image: url(../../assets/pages/ourcompany/image-real-deal-t-m.jpg);
